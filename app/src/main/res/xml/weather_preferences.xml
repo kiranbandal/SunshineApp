@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:key="location_preference"
+        android:title="Change the Location"
+        android:summary="Set location for which the weather data to retrieve"
+        android:dialogTitle="Change Forecast Location"
+        android:defaultValue="Pune"/>
+
+    <ListPreference
+        android:key="weather_units_list_preference"
+        android:title="Weather Forecast Units"
+        android:summary="Pick the unit for weather forecast"
+        android:entries="@array/listArray"
+        android:entryValues="@array/listValues"
+        android:dialogTitle="Pick Units"
+        android:defaultValue="metric"/>
+
+    <EditTextPreference
+        android:key="count_of_preference"
+        android:title="Specifiy Count of Days"
+        android:summary="Type count of Days for which forecast is to be requested"
+        android:dialogTitle="Change Forecast count of days"
+        android:defaultValue="7"/>
+
+
+</PreferenceScreen>
